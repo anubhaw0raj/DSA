@@ -5,7 +5,7 @@ public:
         if(strs.size() == 1) return strs[0];
         string ans = "";
         int cmin = INT_MAX;
-        for(int i=0;i<strs.size()-1;i++){
+        for(int i=0;i < strs.size()-1;i++){
             if(cmin == 0){
                 break;
             }
@@ -17,12 +17,12 @@ public:
                     break;
                 }
             }
-            cmin  =  min(csiz,cmin);
+            cmin = min(csiz,cmin);
         }
+
         for(int i=0;i<cmin;i++){
             ans.push_back(strs[0][i]);
         }
         return ans;
-    
     }
 };
